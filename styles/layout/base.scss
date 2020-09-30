@@ -1,0 +1,167 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  // @include tablets {
+  //   font-size: 15px;
+  // }
+  // @include phones {
+  //   font-size: 14px;
+  // }
+}
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.63;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// .wrapper {
+//   overflow: hidden;
+//   min-height: 100%;
+//   position: relative;
+// }
+
+// .container {
+//   margin: 0 auto;
+//   // max-width: rem(1110px);
+//   max-width: 70rem;
+//   width: 95%;
+//   @include tablets {
+//     max-width: rem(860px);
+//     width: 90%;
+//   }
+//   @include phones {
+//     max-width: rem(610px);
+//   }
+// }
+
+// .section {
+//   height: 100vh;
+//   // min-height: rem(1000px);
+// }
+
+// .maincontent {
+//   height: 100%;
+// }
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  // padding: 0;
+  // margin: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-weight: normal;
+//   // margin: 0;
+// }
+
+// p {
+//   margin: 0;
+//   padding: 0;
+// }
+
+button[type="button"] {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+
+  // max-height: 100%;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+$gray: #4c6e97;
+$dark: #131c27;
+
+@mixin sm($bg: $gray, $color: #fff) {
+  background: $bg;
+  padding: 2rem 6rem;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  transition: 0.3s linear;
+}
+
+@mixin lg($bg: $dark, $color: #fff) {
+  background: $bg;
+  border: 1px solid $bg;
+  min-width: rem(230px);
+  font-size: rem(12px);
+  font-weight: bold;
+  text-align: center;
+  color: $color;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: rem(20px) rem(40px);
+  letter-spacing: 2.5px;
+  transition: 0.3s linear;
+}

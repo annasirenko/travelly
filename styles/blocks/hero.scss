@@ -1,0 +1,24 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("../img/landing-page.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  & h3 {
+    padding: 5rem;
+  }
+  & button {
+    @include sm;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
