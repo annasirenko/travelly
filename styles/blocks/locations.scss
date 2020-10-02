@@ -1,0 +1,75 @@
+#locations {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("../img/new-york-page.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media screen and (max-width: 426px) {
+    pointer-events: none;
+  }
+}
+
+.locations {
+  &_header {
+    @include container;
+    & h2 {
+      padding: 1rem 0;
+      // position: relative;
+      &:after {
+        content: "";
+        // position: absolute;
+        display: block;
+        height: 0.3rem;
+        width: 40rem;
+        background-color: #000;
+      }
+    }
+    & h3 {
+      padding: 4rem 0;
+      @media screen and (max-width: 426px) {
+        background: rgba($color: #000000, $alpha: 0.8);
+        color: #fff;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  &_moving-cloud--1 {
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+  }
+  &_moving-cloud--2 {
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+    animation: cloudAnimation 4s infinite alternate ease-in-out;
+    @media screen and (max-width: 425px) {
+      top: 5%;
+    }
+  }
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+.border-bottom {
+  display: block;
+  height: 0.3rem;
+  width: 4rem;
+  background-color: #000;
+}

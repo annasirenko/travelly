@@ -377,10 +377,6 @@ h5 {
 a {
   color: #fff; }
 
-.container {
-  width: 90%;
-  margin: auto; }
-
 .header_main {
   background-color: #131c27;
   color: #fff; }
@@ -390,14 +386,14 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
-  margin: auto;
   padding: 2rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto; }
   nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -424,7 +420,7 @@ nav {
   #logo {
     padding: 2rem; } }
 
-.hero {
+#hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/landing-page.jpg");
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/landing-page.jpg");
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/landing-page.jpg");
@@ -448,17 +444,159 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   text-align: center; }
-  .hero h3 {
+  #hero h3 {
     padding: 5rem; }
-  .hero button {
+  #hero button {
     background: #4c6e97;
     padding: 2rem 6rem;
-    border: none;
+    border: 1px solid #4c6e97;
     color: #fff;
     font-size: 1.6rem;
-    -webkit-transition: 0.3s linear;
-    -o-transition: 0.3s linear;
-    transition: 0.3s linear; }
-    .hero button:hover {
-      background-color: #fff;
-      color: #000; }
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    #hero button:hover {
+      background-color: transparent;
+      border: 1px solid #fff; }
+
+#locations {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/new-york-page.png");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/new-york-page.png");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/new-york-page.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/new-york-page.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  @media screen and (max-width: 426px) {
+    .cloud {
+      pointer-events: none; } }
+
+.locations_header {
+  width: 90%;
+  margin: auto; }
+  .locations_header h2 {
+    padding: 1rem 0; }
+    .locations_header h2:after {
+      content: "";
+      display: block;
+      height: 0.3rem;
+      width: 40rem;
+      background-color: #000; }
+  .locations_header h3 {
+    padding: 4rem 0; }
+    @media screen and (max-width: 426px) {
+      .locations_header h3 {
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        letter-spacing: 2px; } }
+
+.locations_moving-cloud--1 {
+  -webkit-animation: cloudAnimation 3s infinite alternate ease-in-out;
+  animation: cloudAnimation 3s infinite alternate ease-in-out; }
+
+.locations_moving-cloud--2 {
+  top: 0;
+  z-index: -1;
+  opacity: 0.5;
+  -webkit-animation: cloudAnimation 4s infinite alternate ease-in-out;
+  animation: cloudAnimation 4s infinite alternate ease-in-out; }
+  @media screen and (max-width: 425px) {
+    .locations_moving-cloud--2 {
+      top: 5%; } }
+
+@-webkit-keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+    transform: translate(10%, -10%); }
+  to {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%); } }
+
+@keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+    transform: translate(10%, -10%); }
+  to {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%); } }
+
+.border-bottom {
+  display: block;
+  height: 0.3rem;
+  width: 4rem;
+  background-color: #000; }
+
+.benefits_header {
+  background-color: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; }
+  .benefits_header h3 {
+    padding: 1rem; }
+
+.benefits_cards {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .benefits_cards--pic {
+    background-color: #4c6e97; }
+  .benefits_cards--list {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25rem;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .benefits_cards--list:hover {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px); }
+    .benefits_cards--list h4 {
+      padding: 2rem; }
+    .benefits_cards--list p {
+      padding: 1rem; }
+    .benefits_cards--list img {
+      max-width: 15%;
+      margin: 2rem;
+      display: inline; }

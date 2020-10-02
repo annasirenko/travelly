@@ -1,4 +1,4 @@
-.hero {
+#hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url("../img/landing-page.jpg");
   background-position: center;
@@ -17,8 +17,8 @@
   & button {
     @include sm;
     &:hover {
-      background-color: #fff;
-      color: #000;
+      background-color: transparent;
+      border: 1px solid #fff;
     }
   }
 }

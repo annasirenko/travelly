@@ -134,21 +134,16 @@ a {
   color: #fff;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-}
-
 $gray: #4c6e97;
 $dark: #131c27;
 
 @mixin sm($bg: $gray, $color: #fff) {
   background: $bg;
   padding: 2rem 6rem;
-  border: none;
+  border: 1px solid $bg;
   color: #fff;
   font-size: 1.6rem;
-  transition: 0.3s linear;
+  transition: all 0.5s ease-in-out;
 }
 
 @mixin lg($bg: $dark, $color: #fff) {
@@ -164,4 +159,9 @@ $dark: #131c27;
   padding: rem(20px) rem(40px);
   letter-spacing: 2.5px;
   transition: 0.3s linear;
+}
+
+@mixin container {
+  width: 90%;
+  margin: auto;
 }
