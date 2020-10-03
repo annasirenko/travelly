@@ -1,6 +1,8 @@
 .header_main {
   background-color: #131c27;
   color: #fff;
+  // top: 0px;
+  // position: sticky;
 }
 nav {
   min-height: 10vh;
@@ -8,6 +10,7 @@ nav {
   padding: 2rem;
   align-items: center;
   flex-wrap: wrap;
+
   @include container;
   & ul {
     display: flex;

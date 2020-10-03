@@ -34,17 +34,17 @@
       &:hover {
         transform: translateY(-10px);
       }
-      & h4 {
-        padding: 2rem;
-      }
+      & h4,
       & p {
         padding: 1rem;
       }
 
       & img {
-        max-width: 15%;
+        // max-width: 15%;
         margin: 2rem;
         display: inline;
+        width: 64px;
+        height: 35px;
       }
     }
   }

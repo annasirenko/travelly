@@ -592,11 +592,123 @@ nav {
       -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
       transform: translateY(-10px); }
-    .benefits_cards--list h4 {
-      padding: 2rem; }
+    .benefits_cards--list h4,
     .benefits_cards--list p {
       padding: 1rem; }
     .benefits_cards--list img {
-      max-width: 15%;
       margin: 2rem;
-      display: inline; }
+      display: inline;
+      width: 64px;
+      height: 35px; }
+
+#contact {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/contact-mountain.png");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/contact-mountain.png");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/contact-mountain.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/contact-mountain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contact_wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: #fff;
+  border-radius: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media screen and (max-width: 497px) {
+    .contact_wrapper {
+      width: 100%; } }
+  .contact_wrapper label {
+    margin: 0 3rem; }
+  .contact_wrapper button {
+    width: 100%;
+    padding: 4rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    background: #4c6e97;
+    padding: 2rem 6rem;
+    border: 1px solid #4c6e97;
+    color: #fff;
+    font-size: 1.6rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    .contact_wrapper button:hover {
+      background-color: transparent;
+      border: 1px solid #4c6e97; }
+  .contact_wrapper input {
+    padding: 1rem 3rem;
+    outline: none; }
+    .contact_wrapper input:focus {
+      border-color: #4c6e97; }
+
+.contact_header {
+  text-align: center;
+  padding: 4rem; }
+
+.contact_form--name, .contact_form--email {
+  padding: 3rem;
+  text-align: center; }
+
+#footer {
+  min-height: 10vh;
+  background-color: #131c27;
+  color: #fff; }
+
+.footer_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .footer_wrapper h5 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem; }
+  @media screen and (max-width: 497px) {
+    .footer_wrapper {
+      text-align: center; }
+      .footer_wrapper h5 {
+        margin-bottom: 1rem; } }
+
+.footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media screen and (max-width: 497px) {
+    .footer_list {
+      margin: 0 auto; } }
+  .footer_list--icon {
+    margin-right: 4rem; }
+    .footer_list--icon:last-child {
+      margin-right: 0; }

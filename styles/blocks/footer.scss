@@ -1,0 +1,42 @@
+#footer {
+  min-height: 10vh;
+  background-color: $dark;
+  color: #fff;
+}
+.footer {
+  &_wrapper {
+    display: flex;
+    padding: 2rem;
+    @include container;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    & h5 {
+      flex: 1 1 40rem;
+    }
+    @media screen and(max-width:497px) {
+      text-align: center;
+      & h5 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &_list {
+    display: flex;
+    // flex: 1 1 40rem;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and(max-width:497px) {
+      margin: 0 auto;
+    }
+
+    &--icon {
+      margin-right: 4rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
