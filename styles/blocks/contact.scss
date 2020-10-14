@@ -29,8 +29,10 @@
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
       outline: none;
+
       @include sm;
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: transparent;
         border: 1px solid $gray;
       }
@@ -38,6 +40,7 @@
     & input {
       padding: 1rem 3rem;
       outline: none;
+      outline-style: #fff;
       &:focus {
         border-color: $gray;
       }

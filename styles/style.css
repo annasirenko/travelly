@@ -403,6 +403,13 @@ nav {
     flex: 1 1 40rem;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
+    nav ul a {
+      outline: none;
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      nav ul a:hover, nav ul a:focus {
+        color: #4c6e97; }
 
 #logo {
   font-size: 2.8rem;
@@ -421,10 +428,10 @@ nav {
     padding: 2rem; } }
 
 #hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../img/landing-page.jpg");
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/landing-page.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/landing-page.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/landing-page.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(transparent)), url("../img/landing-page.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../img/landing-page.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../img/landing-page.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../img/landing-page.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -454,8 +461,9 @@ nav {
     font-size: 1.6rem;
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
-    #hero button:hover {
+    transition: all 0.5s ease-in-out;
+    outline: none; }
+    #hero button:hover, #hero button:focus {
       background-color: transparent;
       border: 1px solid #fff; }
 
@@ -648,12 +656,13 @@ nav {
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
-    .contact_wrapper button:hover {
+    .contact_wrapper button:hover, .contact_wrapper button:focus {
       background-color: transparent;
       border: 1px solid #4c6e97; }
   .contact_wrapper input {
     padding: 1rem 3rem;
-    outline: none; }
+    outline: none;
+    outline-style: #fff; }
     .contact_wrapper input:focus {
       border-color: #4c6e97; }
 
