@@ -14,7 +14,7 @@
   & h3 {
     padding: 5rem;
   }
-  & button {
+  & .button {
     @include sm;
     outline: none;
     &:hover,
